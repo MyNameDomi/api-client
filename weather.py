@@ -5,11 +5,6 @@ import argparse
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s", force=True)
 
 
-
-default_lat =48.14
-default_lot =11.58
-
-
 def get_input() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--lat", type=float, default=48.14, help="which latitude")
